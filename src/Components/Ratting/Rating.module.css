@@ -1,0 +1,52 @@
+/* Rating.module.css */
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure title takes full width */
+}
+
+.star {
+  font-size: 36px;
+  color: grey;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.rating-text {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 100%; /* Ensure text takes full width */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Spread items across the list item */
+  align-items: center; /* Vertically center items */
+  width: 100%; /* Ensure list items take full width */
+}
+
+/* Adjust star rating alignment */
+li span {
+  margin-right: 5px; /* Add spacing between stars */
+}
