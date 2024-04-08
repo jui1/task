@@ -10,7 +10,9 @@ function App() {
     <div className="App">
     
       <div className="SideMenuAndPageContent">
-        <PageContent></PageContent>
+        <PageContent>
+        
+        </PageContent>
       </div>
      
     </div>

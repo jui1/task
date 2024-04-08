@@ -15,10 +15,10 @@ const Rating = () => {
     { name: 'Attention to Detail', rating: 0 },
   ];
 
-  // State to manage the list of parameters and their ratings
+ 
   const [parameters, setParameters] = useState(initialParameters);
 
-  // Function to handle rating change for a specific parameter
+
   const handleRatingChange = (index, newRating) => {
     const updatedParameters = [...parameters];
     updatedParameters[index].rating = newRating;
@@ -33,7 +33,7 @@ const Rating = () => {
           <li key={index}>
             <strong>{param.name}</strong>
             <br />
-            {/* Display stars for rating */}
+          
             {[...Array(5)].map((_, starIndex) => (
               <span
                 key={starIndex}
@@ -46,7 +46,7 @@ const Rating = () => {
           </li>
         ))}
       </ul>
-      {/* Display overall rating summary */}
+     
       <p>
         Overall Rating: {parameters.reduce((total, param) => total + param.rating, 0)}/{parameters.length * 5}
       </p>

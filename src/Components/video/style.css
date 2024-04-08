@@ -14,7 +14,7 @@
     background: black;
     width:50%;
     height:50%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 #user-2{
     display: none;
